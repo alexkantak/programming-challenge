@@ -30,6 +30,8 @@ public final class App {
 		}
 
 		if (args.length == 1 && Objects.equals(args[0], "football")) {
+
+
 			String teamWithSmallestGoalSpread = "A good team"; // Your goal analysis function call …
 			System.out.printf("Team with smallest goal spread       : %s%n", teamWithSmallestGoalSpread);
 		}
