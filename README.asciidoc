@@ -20,7 +20,7 @@ Implement a solution for the given tasks which aims for
 * clean software design & architecture
 
 Be prepared to discuss your implementation and software design
-decisions. Show us how you would solve the task when working on your day-to-day 
+decisions. Show us how you would solve the task when working on your day-to-day
 job.
 
 Feel free to come up with own ideas & solutions. There is no plain

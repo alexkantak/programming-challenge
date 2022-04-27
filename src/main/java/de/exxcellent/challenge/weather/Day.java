@@ -1,18 +1,20 @@
 package de.exxcellent.challenge.weather;
 
+import java.util.Objects;
+
 public class Day {
-	private final int day;
+	private final int dayNumber;
 	private final int maxTemp;
 	private final int minTemp;
 
-	public Day(int day, int maxTemp, int minTemp) {
-		this.day = day;
+	public Day(int dayNumber, int maxTemp, int minTemp) {
+		this.dayNumber = dayNumber;
 		this.maxTemp = maxTemp;
 		this.minTemp = minTemp;
 	}
 
-	public int getDay() {
-		return day;
+	public int getDayNumber() {
+		return dayNumber;
 	}
 
 	public int getMaxTemp() {
@@ -23,7 +25,7 @@ public class Day {
 		return minTemp;
 	}
 
-	public int getTempRange() {
+	public int getTempSpread() {
 		return maxTemp - minTemp;
 	}
 }

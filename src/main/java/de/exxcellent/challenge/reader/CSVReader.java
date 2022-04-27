@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CSVReader implements Reader {
+public class CSVReader {
 
 	private final String resourcePath;
 
@@ -15,7 +15,7 @@ public class CSVReader implements Reader {
 		this.resourcePath = resourcePath;
 	}
 
-	public List<List<String>> readData(String fileName) {
+	public List<List<String>> readFile(String fileName) {
 		List<List<String>> content = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(resourcePath + fileName))) {
 			String line;
