@@ -8,7 +8,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class WeatherHandlerTest {
-
 	Day day1 = new Day(1, 2, 1);
 	Day day2 = new Day(2, 2, 2);
 	Day day3 = new Day(3, 6, 3);

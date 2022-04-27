@@ -6,8 +6,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CSVAdapterTest {
-	FootballAdapter weatherAdapter = new CSVAdapter();
+class FootballAdapterCSVTest {
+	FootballAdapter weatherAdapter = new FootballAdapterCSV();
 	Team firstTeam = new Team("Arsenal",79,36);
 	Team lastTeam = new Team("Leicester",30,64);
 

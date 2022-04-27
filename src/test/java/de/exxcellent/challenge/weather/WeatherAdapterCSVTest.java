@@ -6,8 +6,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CSVAdapterTest {
-	WeatherAdapter weatherAdapter = new CSVAdapter();
+class WeatherAdapterCSVTest {
+	WeatherAdapter weatherAdapter = new WeatherAdapterCSV();
 	Day firstDay = new Day(1,88,59);
 	Day lastDay = new Day(30,90,45);
 

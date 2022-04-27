@@ -1,7 +1,10 @@
 package de.exxcellent.challenge;
 
+import de.exxcellent.challenge.football.FootballAdapter;
+import de.exxcellent.challenge.football.FootballAdapterCSV;
+import de.exxcellent.challenge.football.FootballHandler;
 import de.exxcellent.challenge.weather.WeatherAdapter;
-import de.exxcellent.challenge.weather.CSVAdapter;
+import de.exxcellent.challenge.weather.WeatherAdapterCSV;
 import de.exxcellent.challenge.weather.WeatherHandler;
 
 import java.util.Objects;
@@ -22,7 +25,7 @@ public final class App {
 	public static void main(String... args) {
 
 		if (args.length == 1 && Objects.equals(args[0], "weather")) {
-			WeatherAdapter weatherAdapter = new CSVAdapter();
+			WeatherAdapter weatherAdapter = new WeatherAdapterCSV();
 			WeatherHandler weatherHandler = new WeatherHandler(weatherAdapter.getDays());
 
 			int dayWithSmallestTempSpread = weatherHandler.getDayWithSmallestTempSpread().getDayNumber();     // Your day analysis function call …
@@ -30,7 +33,8 @@ public final class App {
 		}
 
 		if (args.length == 1 && Objects.equals(args[0], "football")) {
-
+			FootballAdapter footballAdapter = new FootballAdapterCSV();
+			FootballHandler footballHandler = new FootballHandler(footballAdapter.getTeams());
 
 			String teamWithSmallestGoalSpread = "A good team"; // Your goal analysis function call …
 			System.out.printf("Team with smallest goal spread       : %s%n", teamWithSmallestGoalSpread);

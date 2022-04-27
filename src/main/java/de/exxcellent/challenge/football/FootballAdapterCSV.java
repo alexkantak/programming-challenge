@@ -6,7 +6,7 @@ import de.exxcellent.challenge.weather.Day;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVAdapter implements FootballAdapter {
+public class FootballAdapterCSV implements FootballAdapter {
 
 	private Team createTeam(List<String> teamData) {
 		String name = teamData.get(0);

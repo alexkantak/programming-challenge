@@ -5,7 +5,7 @@ import de.exxcellent.challenge.reader.CSVReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CSVAdapter implements WeatherAdapter {
+public class WeatherAdapterCSV implements WeatherAdapter {
 
 	private Day createDay(List<String> dayData) {
 		int dayIndex = Integer.parseInt(dayData.get(0));

@@ -13,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @author Benjamin Schmid <benjamin.schmid@exxcellent.de>
  */
 class CSVReaderTest {
-
 	private final CSVReader reader = new CSVReader("src/main/resources/de/exxcellent/challenge/");
 	private final List<List<String>> weatherData = reader.readFile("weather.csv");
 
