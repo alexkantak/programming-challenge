@@ -1,6 +1,6 @@
-package de.exxcellent.challenge;
+package de.exxcellent.challenge.reader;
 
-import org.junit.jupiter.api.BeforeEach;
+import de.exxcellent.challenge.reader.CSVReader;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CSVReaderTest {
 
 	private final CSVReader reader = new CSVReader("src/main/resources/de/exxcellent/challenge/");
-	private final List<List<String>> weatherData = reader.readFile("weather.csv");
+	private final List<List<String>> weatherData = reader.readData("weather.csv");
 
 	@Test
 	void testHeaderData() {

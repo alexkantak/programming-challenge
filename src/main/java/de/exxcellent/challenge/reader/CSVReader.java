@@ -1,4 +1,4 @@
-package de.exxcellent.challenge;
+package de.exxcellent.challenge.reader;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CSVReader {
+public class CSVReader implements Reader {
 
 	private final String resourcePath;
 
-	CSVReader(String resourcePath) {
+	public CSVReader(String resourcePath) {
 		this.resourcePath = resourcePath;
 	}
 
-	public List<List<String>> readFile(String fileName) {
+	public List<List<String>> readData(String fileName) {
 		List<List<String>> content = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(resourcePath + fileName))) {
 			String line;
